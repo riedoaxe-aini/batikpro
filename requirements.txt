@@ -1,0 +1,4 @@
+flet>=0.82.0
+Pillow>=9.0.0
+requests>=2.28.0
+reportlab>=4.0.0

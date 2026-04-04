@@ -1,0 +1,56 @@
+[project]
+name = "batikpro"
+version = "2.0.0"
+description = "BatikPro ERP - Aplikasi Manajemen & Kalkulasi HPP Batik"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    {name = "Ridho Akbar", email = "riedoaxe@yahoo.com"}
+]
+dependencies = [
+    "flet>=0.82.0",
+    "pillow>=9.0.0",
+    "requests>=2.28.0",
+]
+
+[tool.flet]
+org = "com.batikpro"
+product = "BatikPro"
+company = "Ridho Akbar"
+copyright = "Copyright 2026"
+
+[tool.flet.app]
+path = "."
+
+[tool.flet.android]
+bundle_id = "com.batikpro.app"
+
+[tool.flet.ios]
+bundle_id = "com.batikpro.ios"
+provisioning_profile = ""
+signing_certificate = "Apple Development"
+team_id = ""
+
+[tool.flet.icons]
+source = "assets/icon.png"
+
+[tool.flet.splash]
+android = false
+ios = false
+web = false
+
+[tool.flet.android.permissions]
+"android.permission.INTERNET" = true
+"android.permission.ACCESS_NETWORK_STATE" = true
+"android.permission.READ_EXTERNAL_STORAGE" = true
+"android.permission.WRITE_EXTERNAL_STORAGE" = true
+"android.permission.MANAGE_EXTERNAL_STORAGE" = true
+"android.permission.READ_MEDIA_IMAGES" = true
+"android.permission.READ_MEDIA_VIDEO" = true
+"android.permission.CAMERA" = true
+"android.permission.RECORD_AUDIO" = true
+
+[tool.flet.ios.info_plist]
+"NSPhotoLibraryUsageDescription" = "Aplikasi membutuhkan akses ke galeri untuk menyimpan gambar produk"
+"NSCameraUsageDescription" = "Aplikasi membutuhkan akses kamera untuk foto produk"
+"NSMicrophoneUsageDescription" = "Aplikasi membutuhkan akses mikrofon untuk rekaman"
